@@ -56,7 +56,7 @@ header {
   background-color: var(--bg);
 
   /* The text in the header will be centered. */
-  text-align: center;
+  text-align: left;
 
   /* There will be padding of 20px at the top and bottom of the header. */
   padding: 20px 0;
@@ -70,6 +70,17 @@ nav a {
   text-decoration: none;
   color: var(--text);
   font-size: 250%;
+  float: right;
+}
+
+.topbar {
+  text-align: right;
+}
+
+.title {
+  text-align: left;
+  float: left;
+  font-size: 250%;
 }
 
 nav a:hover {
@@ -82,6 +93,7 @@ nav a:hover {
 section {
   /* The sections will be displayed in a flex container with a flex direction of column and align-items of center. This means that the children of the sections will be displayed one after the other, and the items will be centered vertically. */
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -94,6 +106,12 @@ section {
   margin: 20px 0;
   font-size: 1.7rem;
   text-align: center;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about ul {
